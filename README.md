@@ -148,23 +148,38 @@ CSV      SQL Database
 ## 📂 Repository Structure
 
 ```text
-IMDb-2024-Analytics/
+IMDB_Trend_Detector/
 │
 ├── data/
-│   ├── raw/
-│   └── processed/
+│   ├── All_Movies_DB.sql
+│   ├── IMDB_Action_Movies.csv
+│   ├── IMDB_Animation_Movies.csv
+│   ├── IMDB_Cleaned_Movies.csv
+│   ├── IMDB_Fantasy_Movies.csv
+│   ├── IMDB_Raw_Movies.csv
+│   ├── IMDB_Romance_Movies.csv
+│   └── IMDB_Thriller_Movies.csv
 │
 ├── notebooks/
-│   └── exploratory_analysis.ipynb
+│   ├── imdb.ipynb
+│   ├── IMDB_Action Movies.ipynb
+│   ├── IMDB_Animation.ipynb
+│   ├── IMDB_Fantasy.ipynb
+│   ├── IMDB_Romance.ipynb
+│   ├── IMDB_Thriller.ipynb
+│   ├── Joining.ipynb
+│   └── Merging_NB.ipynb
 │
 ├── src/
-│   ├── scraper.py
+│   ├── app.py
 │   ├── database.py
-│   └── analysis.py
+│   ├── data_loader.py
+│   ├── utils.py
+│   └── visualizations.py
 │
-├── app.py
 ├── requirements.txt
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
 ---
@@ -175,7 +190,7 @@ IMDb-2024-Analytics/
 
 ```bash
 git clone https://github.com/SICE_Logs/IMDB_Trend_Detector.git
-cd imdb-2024-dashboard
+cd IMDB_Trend_Detector
 ```
 
 ### Install Dependencies
@@ -207,14 +222,6 @@ The dashboard enables users to explore:
 
 ## 📸 Dashboard Preview
 
-Add screenshots here.
-
-Examples:
-
-* Genre Distribution Chart
-* Top Movies Dashboard
-* Rating Analysis Dashboard
-* Correlation Heatmaps
 
 ---
 
@@ -276,9 +283,4 @@ Project Lead & Developer
 
 If you found this project useful, consider giving it a star and sharing feedback.
 
-
-
-👨‍💻 Contributors
-
-S Logajit (Project Lead)
 
