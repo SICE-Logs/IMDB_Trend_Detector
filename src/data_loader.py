@@ -5,9 +5,9 @@ import os
 
 class DataLoader:
     def __init__(self):
-        # Update these paths to match your actual dataset locations
-        self.raw_data_path = "IMDB_Raw_Movies.csv" # Replace with your raw dataset path
-        self.preprocessed_data_path = "IMDB_Cleaned_Movies.csv"  # Replace with your preprocessed dataset path
+        
+        self.raw_data_path = "IMDB_Raw_Movies.csv" 
+        self.preprocessed_data_path = "IMDB_Cleaned_Movies.csv"  
     
     def load_preprocessed_data(self):
         """Load preprocessed data from CSV file for visualizations"""
@@ -195,3 +195,5 @@ class DataLoader:
             return pd.DataFrame()
         
         return df.head(n_rows)
+
+
