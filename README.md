@@ -221,6 +221,9 @@ The dashboard enables users to explore:
 ---
 
 ## 📸 Dashboard Preview
+<img width="1919" height="1002" alt="image" src="https://github.com/user-attachments/assets/8578d83f-574b-4aeb-8174-445088872052" />
+<img width="1593" height="951" alt="image" src="https://github.com/user-attachments/assets/6dbb9fa5-cef0-4d02-b4bf-e14fb44baeb4" />
+
 
 
 ---
