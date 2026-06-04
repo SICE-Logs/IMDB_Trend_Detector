@@ -202,7 +202,7 @@ pip install -r requirements.txt
 ### Launch Dashboard
 
 ```bash
-streamlit run app.py
+python -m streamlit run src/app.py
 ```
 
 ---
