@@ -1,18 +1,18 @@
 import pandas as pd
-import numpy as np
 import streamlit as st
-import os
+import config
+
 
 class DataLoader:
     def __init__(self):
         
-        self.raw_data_path = "IMDB_Raw_Movies.csv" 
-        self.preprocessed_data_path = "IMDB_Cleaned_Movies.csv"  
+        self.raw_data_path = config.RAW_DATA_PATH 
+        self.preprocessed_data_path = config.PREPROCESSED_DATA_PATH 
     
     def load_preprocessed_data(self):
         """Load preprocessed data from CSV file for visualizations"""
         try:
-            if os.path.exists(self.preprocessed_data_path):
+            if self.preprocessed_data_path.exists() and self.preprocessed_data_path.is_file():
                 df = pd.read_csv(self.preprocessed_data_path)
                 # Map column names to expected format
                 df = self._standardize_columns(df)
@@ -28,7 +28,7 @@ class DataLoader:
     def load_raw_data(self):
         """Load raw data from CSV file for database operations"""
         try:
-            if os.path.exists(self.raw_data_path):
+            if self.raw_data_path.exists() and self.raw_data_path.is_file():
                 df = pd.read_csv(self.raw_data_path)
                 
                 # Map column names to expected format
